@@ -55,23 +55,6 @@
 	</div>
 </div>
 
-<script>
-function showModel(id) {
-	var frmDelete = document.getElementById("delete-frm");
-	frmDelete.action = 'product/'+id;
-	var confirmationModal = document.getElementById("deleteConfirmationModel");
-	confirmationModal.style.display = 'block';
-	confirmationModal.classList.remove('fade');
-	confirmationModal.classList.add('show');
-}
-
-function dismissModel() {
-	var confirmationModal = document.getElementById("deleteConfirmationModel");
-	confirmationModal.style.display = 'none';
-	confirmationModal.classList.remove('show');
-	confirmationModal.classList.add('fade');
-}
-</script>
 
 <div class="container">
 	<div class="row">
@@ -112,3 +95,23 @@ function dismissModel() {
 		</div>
 	</div>
 </div>
+
+
+<script>
+function showModel(id) {
+	var frmDelete = document.getElementById("delete-frm");
+	frmDelete.action = 'product/'+id;
+	var confirmationModal = document.getElementById("deleteConfirmationModel");
+	confirmationModal.style.display = 'block';
+	confirmationModal.classList.remove('fade');
+	confirmationModal.classList.add('show');
+}
+
+function dismissModel() {
+	var confirmationModal = document.getElementById("deleteConfirmationModel");
+	confirmationModal.style.display = 'none';
+	confirmationModal.classList.remove('show');
+	confirmationModal.classList.add('fade');
+}
+</script>
+
